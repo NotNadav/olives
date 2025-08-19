@@ -1,0 +1,44 @@
+{
+  "name": "MenuItem",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "שם הפריט"
+    },
+    "description": {
+      "type": "string",
+      "description": "תיאור הפריט"
+    },
+    "price": {
+      "type": "number",
+      "description": "מחיר בשקלים"
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "קפה",
+        "משקאות קרים",
+        "מאפים",
+        "ארוחות בוקר",
+        "כריכים וסלטים",
+        "קינוחים"
+      ],
+      "description": "קטגוריית הפריט"
+    },
+    "image_url": {
+      "type": "string",
+      "description": "תמונה של הפריט"
+    },
+    "is_popular": {
+      "type": "boolean",
+      "default": false,
+      "description": "האם הפריט פופולרי"
+    }
+  },
+  "required": [
+    "name",
+    "price",
+    "category"
+  ]
+}

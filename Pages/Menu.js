@@ -3,9 +3,9 @@
 
 import React, { useState, useMemo } from 'react';
 import { menuItems as menuData } from '../data/menuItems';
-import MenuHeader from '../Components/Menu/MenuHeader.js';
-import CategoryFilter from '../Components/Menu/CategoryFilter.js';
-import MenuItemCard from '../Components/Menu/MenuItemCard.js';
+import MenuHeader from '../components/Menu/MenuHeader.js';
+import CategoryFilter from '../components/Menu/CategoryFilter.js';
+import MenuItemCard from '../components/Menu/MenuItemCard.js';
 
 export default function MenuPage() {
   const [selectedCategory, setSelectedCategory] = useState('all');
@@ -93,3 +93,4 @@ export default function MenuPage() {
     </div>
   );
 }
+
